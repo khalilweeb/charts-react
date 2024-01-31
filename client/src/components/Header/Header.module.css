@@ -1,0 +1,25 @@
+.header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.781);
+    width: 60%;
+    position: relative;
+    top: -40px;
+    left: 8%;
+    padding: 0 20px;
+    color: white;
+    border-radius: 20px;
+   
+
+}
+
+.header select {
+    width: 300px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

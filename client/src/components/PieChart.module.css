@@ -1,0 +1,57 @@
+.chartContainer {
+  position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.116);
+    border-radius: 10px;
+    width: 89%;
+    padding: 50px;
+  
+   
+
+  }
+  
+.c {
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+
+    
+   
+  } 
+  
+  .legendContainer {
+   
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 100px;
+    top: -10px;
+
+  }
+  
+  .legendItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.692);
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+   
+  }
+  
+  .legendColor {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  
+  .legendLabel {
+    font-size: 14px;
+  }

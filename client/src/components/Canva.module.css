@@ -1,0 +1,58 @@
+.chartContainer {
+background-color:rgba(0, 0, 0, 0.116);
+border-radius: 10px;
+margin-bottom: 30px;
+position: relative;
+width:100%;
+display: flex;
+
+
+
+
+  }
+
+
+  .chartContainer  canvas {
+    padding: 20px;
+  
+  }
+  
+  .legendContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+   
+    align-items: flex-start;
+    justify-content: center;
+
+ }
+  
+  .legendItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5PX;
+    background-color: rgba(0, 0, 0, 0.822);
+    color: aliceblue;
+    border-radius: 3px;
+    padding: 5px ;
+    cursor: pointer;
+    
+    
+    /* text-decoration: line-through; */
+  }
+  
+  .legendColor {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  
+  .legendLabel {
+    font-size: 14px;
+  }
+
+  .c {
+
+    border-radius: 10px;
+  }
+  

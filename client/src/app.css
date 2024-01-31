@@ -1,0 +1,20 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.App .div {
+    width: 50%;
+    margin-left: 300px;
+}
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
