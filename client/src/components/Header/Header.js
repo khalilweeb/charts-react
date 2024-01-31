@@ -11,9 +11,9 @@ const Header = (props) => {
   return (
     <div className={clss.header}>
       <h1>Data</h1>
-      <select  value={selectedName} onChange={(event) => onChangeNameHandler(event)}>
+      <select  value={selectedName} onChange={onChangeNameHandler}>
         <option value="khalil">Khalil</option>
-        <option value="hello">hello</option>
+        <option value="hello">yo</option>
         <option value="hi">hi</option>
 
       </select>
