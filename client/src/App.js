@@ -4,6 +4,9 @@ import Canva from "./components/Canva";
 import Header from "./components/Header/Header";
 import PieChart from "./components/Pie";
 import SideBar from './components/sidBar/SideBar';
+import AddPerson from "./components/AddPerson/AddPerson";
+import UpdatePerson from "./components/UpdatePerson/UpdatePerson";
+import RemovePerson from "./components/RemovePerson/RemovePerson";
 
 const datasetskh = [
   {
@@ -169,7 +172,9 @@ const pieData = [{name: "khalil" , data: pieDatakhalil } , {name: "hello" , data
 
 
 function App() {
- 
+  const [addPersonHandler , setAddPersonHandler] = useState(false);
+  const [updatePersonHandler , setupdatePersonHandler] = useState(false);
+  const [removePersonHandler , setremovePersonHandler] = useState(false);
   const [diplayedData , setDisplayedData] = useState(datasetskh);
   const [piediplayedData , setPieDisplayedData] = useState(pieDatakhalil);
 
@@ -189,11 +194,40 @@ function App() {
     });
    
   }
+
+const showAddPersonHandler = () => {
+  setAddPersonHandler(true);
+
+}
+const hideAddPersonHandler = () => {
+  setAddPersonHandler(false);
+
+}
+const showUpdatePersonHandler = () => {
+  setupdatePersonHandler(true);
+
+}
+const hideUpdatePersonHandler = () => {
+  setupdatePersonHandler(false);
+
+}
+const showRemovePersonHandler = () => {
+  setremovePersonHandler(true);
+
+}
+const hideRemovePersonHandler = () => {
+  setremovePersonHandler(false);
+
+}
+
   return (
     <div className="App">
+      {addPersonHandler && <AddPerson onClick={hideAddPersonHandler}/>}
+      {updatePersonHandler && <UpdatePerson onClick={hideUpdatePersonHandler}/>}
+      {removePersonHandler && <RemovePerson onClick={hideRemovePersonHandler}/>}
       <Header diplayName={displayName}/>
-     
-        <SideBar/>
+
+        <SideBar add={showAddPersonHandler} update={showUpdatePersonHandler} remove={showRemovePersonHandler}/>
         <div className="div">
         <Canva dataSet={diplayedData}/>
        <PieChart pieData={piediplayedData}/>

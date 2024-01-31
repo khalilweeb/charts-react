@@ -1,0 +1,43 @@
+.h1 {
+    text-align: center;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form input {
+    width: 60%;
+    padding: 10px;
+    outline: none;
+    border: 2px solid grey;
+    border-radius: 5px;
+    margin: 5px;
+}
+.form div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form div input {
+    width: 30%;
+}
+.form button {
+  
+    margin: 20px;
+    width: 100px;
+    outline: none;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #eeff05;
+}
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
